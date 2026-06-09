@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/@pnotify/core/dist/PNotify.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@pnotify/core/dist/BrightTheme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container-game">
+        <p>Завдання 1</p>
+        <h2>Гра на швидкість</h2>
+        <div class="box-1">
+          <button id="game-btn">почати гру</button>
+        </div>
+        <div class="box-2">
+          <div class="box-13">
+            <p id="score-success">Правильні слова: 0</p>
+            <p id="score-error">Не правильні слова: 0</p>
+          </div>
+          <div class="time-bar">
+            <p id="score-time">0</p>
+            <div class="time-fill"></div>
+          </div>
+          <p id="output-word"></p>
+          <input type="text" id="enter-word" placeholder="Натисніть Enter щоб перевірити " autocomplete="off"/>
+        </div>
+        <div class="box-3">
+          <h2>Гра завершена!</h2>
+          <p id="user-result"></p>
+          <button id="close-btn" onclick="restart()">&#10006;</button>
+        </div>
+      </div>
+      <div class="container-schedule">
+        <p>Завдання 2</p>
+        <h2>Графік</h2>
+        <canvas id="sales-chart"></canvas>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/@pnotify/core/dist/PNotify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
